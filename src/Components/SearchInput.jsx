@@ -13,7 +13,7 @@ const SearchInput = ({ setResultShown, setIsLoading, isLoading, setData, setErr 
 
         setIsLoading(true);
 
-        fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${term}&aqi=no`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${term}&aqi=no`)
             .then((res) => {
                 setIsLoading(false);
                 return res.json();
